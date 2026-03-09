@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+
+background-image:url("bgimage.jpg");
+background-size:cover;
+background-position:center;
+}
+
+/* Login Card */
+
+.login-box{
+width:320px;
+padding:40px;
+text-align:center;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+
+border-radius:15px;
+
+box-shadow:0 8px 32px rgba(0,0,0,0.3);
+
+/* animation */
+animation:fadeIn 1s ease;
+}
+
+.login-box h2{
+margin-bottom:20px;
+}
+
+/* Input fields */
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+outline:none;
+}
+
+/* Button */
+
+button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:5px;
+background:#6c7bff;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#4b5cff;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h2>Login</h2>
+
+<input type="text" placeholder="Email">
+
+<input type="password" placeholder="Password">
+
+<button><a href="Main.html">Sign In</a></button>
+
+<p>Don't have an account? Sign Up</p>
+
+</div>
+
+</body>
+</html>
